@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,sans-self;
+}
+a {
+    color: black;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+/*页面头部*/
+#head {
+    background-color: #253655;
+    height: 40px;
+    overflow: hidden;
+    span {
+        width: 40%;
+        height: 33px;
+        line-height: 33px;
+        float: left;
+        img {
+            width: 100%;
+        }
+    }
+    ul li {
+        line-height: 40px;
+        float: left;
+        margin: 0 10px;
+        img {
+            vertical-align: middle;
+        }
+        a {
+            color: #cfe7fd;
+            font-size: 0.8em;
+        }
+    }
+}
+/*操作区*/
+#operating-sapce {
+    height: 45px;
+    clear: both;
+    line-height: 45px;
+    background-color: #dee9ef;
+    border-bottom: 1px solid #b3bace;
+    a {
+        font-size: 0.7em;
+    }
+    .pull-left {
+        position: relative;
+        min-width: 270px;
+    }
+    .dropdown,
+    .form-control {
+        float: left;
+    }
+    .form-control {
+        display: block;
+        margin-top: 8px;
+        /*暂且没有找到居中input框的代码，但是因为高度固定，可以使用margin-top来居中*/
+        margin-left: 20px;
+        width: 65%;
+        text-indent: 2em;
+    }
+    .input-sm {
+        height: 28px;
+    }
+    .search_icon {
+        position: absolute;
+        top: 33%;
+        left: 36%;
+        color: #B5BDD5;
+        cursor: pointer;
+        &:hover {
+            color: #9ea7bf;
+        }
+    }
+    .ver-middle {
+        float: right;
+        height: 45px;
+        line-height: 45px;
+    }
+}
+/*导航区*/
+nav {
+    clear: both;
+    height: 45px;
+    background-color: white;
+    border-bottom: 1px solid #b3bace;
+    li {
+        height: 45px;
+        display: inline-block;
+        width: 15.4%;
+        line-height: 45px;
+        text-align: center;
+    }
+    .sliding-a:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 0;
+        position: relative;
+        bottom: 4px;
+        background: transparent;
+        transition: width 0.5s ease, background-color 0.5s ease;
+    }
+    .sliding-a:hover:after {
+        width: 100%;
+        background-color: orange;
+    }
+    a {
+        font-size: 0.8em;
+        &:hover {
+            color: orange;
+        }
+    }
+    .middle {
+        margin: 0 auto;
+    }
+}

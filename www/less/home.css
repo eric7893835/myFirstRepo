@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Tahoma, Arial, Roboto, ”Droid Sans”, ”Helvetica Neue”, ”Droid Sans Fallback”, ”Heiti SC”, sans-self;
+}
+a {
+  color: black;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+/*页面头部*/
+#head {
+  background-color: #253655;
+  height: 40px;
+  overflow: hidden;
+}
+#head span {
+  width: 40%;
+  height: 33px;
+  line-height: 33px;
+  float: left;
+}
+#head span img {
+  width: 100%;
+}
+#head ul li {
+  line-height: 40px;
+  float: left;
+  margin: 0 10px;
+}
+#head ul li img {
+  vertical-align: middle;
+}
+#head ul li a {
+  color: #cfe7fd;
+  font-size: 0.8em;
+}
+/*操作区*/
+#operating-sapce {
+  height: 45px;
+  clear: both;
+  line-height: 45px;
+  background-color: #dee9ef;
+  border-bottom: 1px solid #b3bace;
+}
+#operating-sapce a {
+  font-size: 0.7em;
+}
+#operating-sapce .pull-left {
+  position: relative;
+  min-width: 270px;
+}
+#operating-sapce .dropdown,
+#operating-sapce .form-control {
+  float: left;
+}
+#operating-sapce .form-control {
+  display: block;
+  margin-top: 8px;
+  /*暂且没有找到居中input框的代码，但是因为高度固定，可以使用margin-top来居中*/
+  margin-left: 20px;
+  width: 65%;
+  text-indent: 2em;
+}
+#operating-sapce .input-sm {
+  height: 28px;
+}
+#operating-sapce .search_icon {
+  position: absolute;
+  top: 33%;
+  left: 36%;
+  color: #B5BDD5;
+  cursor: pointer;
+}
+#operating-sapce .search_icon:hover {
+  color: #9ea7bf;
+}
+#operating-sapce .ver-middle {
+  float: right;
+  height: 45px;
+  line-height: 45px;
+}
+/*导航区*/
+nav {
+  clear: both;
+  height: 45px;
+  background-color: white;
+  border-bottom: 1px solid #b3bace;
+}
+nav li {
+  height: 45px;
+  display: inline-block;
+  width: 15.4%;
+  line-height: 45px;
+  text-align: center;
+}
+nav .sliding-a:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  position: relative;
+  bottom: 4px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+nav .sliding-a:hover:after {
+  width: 100%;
+  background-color: orange;
+}
+nav a {
+  font-size: 0.8em;
+}
+nav a:hover {
+  color: orange;
+}
+nav .middle {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=home.css.map */
